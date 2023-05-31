@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:profile/view/kalender.dart';
+import 'package:profile/view/donation/Donation.dart';
+import 'package:profile/view/Location/Location.dart';
+import 'package:profile/view/Tasbeeh/Tasbeeh.dart';
 
 class Homepage extends StatelessWidget {
   const Homepage({super.key});
@@ -40,7 +42,7 @@ class Homepage extends StatelessWidget {
                           Navigator.push(
                             context,
                             new MaterialPageRoute(
-                              builder: (context) => DetailScreen(),
+                              builder: (context) => TasbeehScreen(),
                             ),
                           );
                         },
@@ -86,7 +88,12 @@ class Homepage extends StatelessWidget {
                     SizedBox(width: 30), // Spacing between the boxes
                     InkWell(
                         onTap: () {
-                          // Do something here
+                          Navigator.push(
+                            context,
+                            new MaterialPageRoute(
+                              builder: (context) => TasbeehScreen(),
+                            ),
+                          );
                         },
                         child: Container(
                           width: 150,
@@ -139,7 +146,12 @@ class Homepage extends StatelessWidget {
                   children: [
                     InkWell(
                         onTap: () {
-                          // Aksi yang dijalankan saat kontainer pertama diklik
+                          Navigator.push(
+                            context,
+                            new MaterialPageRoute(
+                              builder: (context) => DonationScreen(),
+                            ),
+                          );
                         },
                         child: Container(
                           width: 150,
@@ -183,7 +195,12 @@ class Homepage extends StatelessWidget {
                     SizedBox(width: 30), // Spacing between the boxes
                     InkWell(
                         onTap: () {
-                          // Aksi yang dijalankan saat kontainer pertama diklik
+                          Navigator.push(
+                            context,
+                            new MaterialPageRoute(
+                              builder: (context) => TasbeehScreen(),
+                            ),
+                          );
                         },
                         child: Container(
                           width: 150,

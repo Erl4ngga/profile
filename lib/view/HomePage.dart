@@ -1,6 +1,5 @@
-// ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors
-
 import 'package:flutter/material.dart';
+import 'package:profile/view/kalender.dart';
 
 class Homepage extends StatelessWidget {
   const Homepage({super.key});
@@ -38,7 +37,12 @@ class Homepage extends StatelessWidget {
                   children: [
                     InkWell(
                         onTap: () {
-                          // Do something here
+                          Navigator.push(
+                            context,
+                            new MaterialPageRoute(
+                              builder: (context) => DetailScreen(),
+                            ),
+                          );
                         },
                         child: Container(
                           width: 150,
